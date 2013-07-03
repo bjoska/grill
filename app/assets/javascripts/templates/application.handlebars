@@ -1,5 +1,49 @@
-<h1>Cooking with Ember</h1>
-
-{{outlet}}
-
-{{#linkTo "recipes"}}Go to recipes#index{{/linkTo}}
+<div class="wrapper container-fluid">
+  <div class="row-fluid">
+    <div class="span3 sidebar">
+      <h1 class="logo brand">
+        {{#linkTo "recipes" title="Home | Cooking With Ember"}}
+          Cooking With Ember
+        {{/linkTo}}
+      </h1>
+      <div class="navigation">
+        <nav class="main-nav">
+          <h2>Categories</h2>
+          <ul>
+            <li>
+              {{#linkTo "recipes" title="All Recipes"}}
+                All Recipes
+              {{/linkTo}}
+            </li>
+            <li>
+              <a href="#">Breakfast</a>
+            </li>
+            <li>
+              <a href="#">Lunch</a>
+            </li>
+            <li>
+              <a href="#">Dinner</a>
+            </li>
+            <li>
+              <a href="#">Dessert</a>
+            </li>
+            <li>
+              <a href="#">Snacks</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="span9 content">
+      <div class="row">
+        <div class="span12 breadcrumb">
+          <a href="/">Home</a> >
+          <span class="disabled">All Recipes</span>
+        </div>
+      </div>
+      <div class="row">
+        {{outlet}}
+      </div>
+    </div><!-- //content -->
+  </div>
+</div><!-- //wrapper -->

@@ -9,10 +9,10 @@ App.Recipe = DS.Model.extend({
 });
 
 App.Recipe.FIXTURES = [
-  { 
+  {
     id: 1,
     title: "Fried patatoes",
-    description: ".....",
+    description: "A favorite dish for many people around the world!",
     comments: [ 10 ]
   },
   {id: 2, title: "Ugali and Nyama Choma"   , description: "....."},

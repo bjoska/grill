@@ -1,0 +1,236 @@
+@import "bootstrap";
+@import "bootstrap-responsive";
+
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800");
+
+/* apply a natural box layout model to all elements */
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background: #fafafa;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 300;
+}
+
+.wrapper {
+  margin-top: 10px;
+  background: #fafafa;
+}
+
+.navigation {
+  padding: 10px 0;
+}
+
+.logo {
+  margin-left: 20px;
+  a {
+    font-family: "Open Sans Condensed";
+    font-weight: 300;
+    color: #848484;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-style: italic;
+    background: url(image_path('logo.png')) no-repeat top left;
+    height: 197px;
+    width: 197px;
+    display: block;
+    text-indent: -9999px;
+  }
+}
+
+.recipe {
+  background: #fafafa;
+  border-radius: 2px;
+  border: solid 1px #d2d2d2;
+  position: relative;
+  img {
+    width: 100%;
+  }
+  .title-vote {
+    position: relative;
+    background: #363636;
+    color: #fafafa;
+    padding: 8px 10px 4px;
+    h2 {
+      font-size: 18px;
+      a {
+        color: #fafafa;
+      }
+    }
+  }
+}
+
+.vote {
+  left: 18px;
+  top: -15px;
+  position: absolute;
+}
+
+.vote-button {
+  display: block;
+  border-radius: 4px;
+  background: #e48000 url(image_path('vote.png')) no-repeat center center;
+  color: #fafafa;
+  text-indent: -9999px;
+  width: 63px;
+  height: 28px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  /* border radius */
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  /* prevents bg color from leaking outside the border */
+  background-color: #e37f00;
+  /* layer fill content */
+  -moz-box-shadow: 0 1px 1px #222;
+  /* drop shadow */
+  -webkit-box-shadow: 0 1px 1px #222;
+  /* drop shadow */
+  box-shadow: 0 1px 1px #222;
+  /* drop shadow */
+  float: left;
+}
+
+.breadcrumb .disabled {
+  color: #aaa;
+  font-style: italic;
+}
+
+.vote-count {
+  font-size: 11px;
+  float: right;
+  margin-left: 5px;
+  background: #fafafa;
+  padding: 4px 12px 3px;
+  border-radius: 5px;
+  color: #555;
+}
+
+.vote:hover .vote-button {
+  margin-top: 1px;
+  box-shadow: none;
+}
+
+.recipe .recipe-category {
+  color: #e48000;
+  font-style: italic;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.desc {
+  padding: 10px;
+  color: #4e4e4e;
+  font-size: 13px;
+}
+
+.main-nav {
+  ul {
+    width: 80%;
+    margin: 0;
+  }
+  li {
+    margin-left: 0;
+    list-style-type: none;
+    border-bottom: solid 1px #ccc;
+    a {
+      display: block;
+      padding: 5px 10px;
+    }
+  }
+}
+
+.full-recipe .recipe-head {
+  border-bottom: solid 1px #ccc;
+  overflow: hidden;
+  padding-bottom: 20px;
+}
+
+.recipe-head {
+  img {
+    float: left;
+  }
+  .title-info {
+    float: left;
+    margin-left: 20px;
+    position: relative;
+    .vote {
+      top: 140px;
+      left: 0;
+    }
+    .vote-count {
+      border: solid 1px #ccc;
+    }
+    h2 {
+      font-size: 25px;
+    }
+    .recipe-author {
+      margin-top: 100px;
+      h4 {
+        font-size: 18px;
+      }
+      span {
+        font-style: italic;
+        font-size: 14px;
+        display: block;
+        margin-top: -8px;
+      }
+    }
+  }
+}
+
+.recipe-desc.row,
+.recipe-instructions.row,
+.recipe-comments.row {
+  padding: 20px 0;
+  margin: 0;
+  border-bottom: solid 1px #ccc;
+}
+
+.recipe-ingredients {
+  ul {
+    margin: 0;
+    width: 90%;
+  }
+  li {
+    list-style-type: none;
+    padding: 5px;
+    &:nth-child(odd) {
+      background: #efefef;
+    }
+  }
+}
+
+.recipe-desc .info {
+  border-left: solid 1px #ccc;
+  padding: 0 20px;
+}
+
+.info-label {
+  font-weight: 400;
+  margin-bottom: 0px;
+}
+
+.info-value {
+  display: block;
+  font-weight: 300;
+  padding-bottom: 10px;
+}
+
+#servings {
+  height: 30px;
+}
+
+.recipe-instructions.row {
+  margin: 0;
+}

@@ -1,0 +1,26 @@
+<div class="span3 recipe">
+  <img src="/images/recipe.jpg">
+  <div class="title-vote">
+    <h2>
+      {{#linkTo "recipe" recipe}}
+        {{ recipe.title }}
+      {{/linkTo}}
+    </h2>
+    <a class="vote" href="#" title="vote">
+      <span class="vote-button">
+        Em+
+      </span>
+      <span class="vote-count">
+        100
+      </span>
+    </a>
+  </div>
+  <div class="desc">
+    <p>
+      {{ recipe.description }}
+    </p>
+    <a href="#" class="recipe-category">
+      Dinner
+    </a>
+  </div>
+</div>

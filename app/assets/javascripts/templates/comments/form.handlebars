@@ -1,5 +1,7 @@
 <h4>Post a new comment</h4>
 <p>
-  {{textarea value=body rows=4 placeholder='Your comment here.'}}
+  {{view Ember.TextArea valueBinding="content" placeholder="Your comment here."
+  id="new-comment" action="createNew" rows=4}}
 </p>
-<button class='btn btn-primary'>Create comment</button>
+
+<button {{action createNew}} class='btn btn-primary'>Create comment</button>
